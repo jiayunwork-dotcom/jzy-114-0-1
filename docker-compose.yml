@@ -1,0 +1,11 @@
+services:
+  oxide-film-service:
+    build: .
+    image: oxide-film-service:latest
+    container_name: oxide-film-service
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+    restart: unless-stopped
