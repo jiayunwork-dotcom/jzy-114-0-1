@@ -1,0 +1,10 @@
+version: "3.8"
+
+# 便捷方式（可选）：根目录的 Dockerfile 本身即可一键构建启动
+services:
+  oxidation-kinetics:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
